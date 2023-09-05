@@ -4,9 +4,10 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import Home from "../screen/home";
 import Calendar from "../screen/calendar";
-import NewDay from "../screen/newday";
+import NewDay from "../screen/newDay";
 import Older from "../screen/older";
 import Settings from "../screen/settings";
+import Físico from'../screen/Físico';
 
 
 const Tab = createBottomTabNavigator();
@@ -68,7 +69,7 @@ export default class BottomTabNavigator extends Component {
         />
         <Tab.Screen
           name="settings"
-          component={Settings}
+          component={Físico}
         />
       </Tab.Navigator>
     );
