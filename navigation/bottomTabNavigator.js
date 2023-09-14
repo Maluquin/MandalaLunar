@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import MyStack from "./stackNavigator";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import Home from "../screen/home";
 import Calendar from "../screen/calendar";
@@ -8,7 +9,9 @@ import NewDay from "../screen/newDay";
 import Older from "../screen/older";
 import Settings from "../screen/settings";
 import Físico from'../screen/Físico';
-
+import Presença from '../screen/Presença';
+import Intuição from '../screen/Intuição';
+import Comunicação from '../screen/comunicação'
 
 const Tab = createBottomTabNavigator();
 
@@ -65,11 +68,11 @@ export default class BottomTabNavigator extends Component {
         />
         <Tab.Screen
           name="older"
-          component={Older}
+          component={Comunicação}
         />
         <Tab.Screen
           name="settings"
-          component={Físico}
+          component={Presença}
         />
       </Tab.Navigator>
     );
